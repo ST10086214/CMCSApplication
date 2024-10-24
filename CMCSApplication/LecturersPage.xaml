@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="CMCSApplication.LecturersPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="400" Width="600">
+    <Grid Margin="10" Background="white">
+        <StackPanel>
+            <TextBlock Text="Submit Monthly Claim" FontSize="20" Margin="0,0,0,20" />
+
+            <TextBlock Text="Hours Worked:" />
+            <TextBox x:Name="txtHoursWorked" Width="200" Margin="0,5,0,10" />
+
+            <TextBlock Text="Hourly Rate:" />
+            <TextBox x:Name="txtHourlyRate" Width="200" Margin="0,5,0,10" />
+
+            <TextBlock Text="Additional Notes:" />
+            <TextBox x:Name="txtNotes" Width="200" Height="100" TextWrapping="Wrap" Margin="0,5,0,10" />
+
+            <TextBlock Text="Upload Supporting Document:" />
+            <Button x:Name="btnUploadDocument" Content="Upload" Width="100" Click="UploadDocument_Click" />
+
+            <Button x:Name="btnSubmitClaim" Content="Submit Claim" Width="200" Margin="0,20,0,0" Click="SubmitClaim_Click" />
+        </StackPanel>
+    </Grid>
+</UserControl>
+        
